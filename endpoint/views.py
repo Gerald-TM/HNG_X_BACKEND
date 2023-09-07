@@ -21,8 +21,8 @@ def get_endpoint_view(request):
             'current_day': current_day,
             'utc_time': utc_time,
             'track': track,
-            'github_file_url': 'https://www.google.com',
-            'github_repo_url': 'https://www.google.com',
+            'github_file_url': 'https://github.com/Gerald-TM/HNG_X_BACKEND/blob/main/endpoint/views.py',
+            'github_repo_url': 'https://github.com/Gerald-TM/HNG_X_BACKEND',
             'status': 200,
 
         }
