@@ -34,8 +34,7 @@ def get_endpoint_view(request):
         }
 
         # Convert the python dictionary to a JSON formatted string and return the data as a regular HttpResponse.
-        return HttpResponse('\t\tHosted endpoint taking in two GET request query parameter, and returning specific information in JSON format.\n\n' +
-                             json.dumps(response_data, indent=3), content_type="application/json")
+        return HttpResponse(json.dumps(response_data, indent=3), content_type="application/json")
 
     else:
         # Return an error if the GET request query parameters fail to be validated or correct.
